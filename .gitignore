@@ -1,0 +1,10 @@
+# outputs and data are rebuilt: the real dataset is 20 GB and its tables 5+ GB, never commit them
+out/
+out_test*/
+data/
+report/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+.DS_Store

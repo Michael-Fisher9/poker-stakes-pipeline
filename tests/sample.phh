@@ -1,0 +1,100 @@
+# tests/sample.phh
+# Five hand-built NL50 6-max hands with KNOWN answers, used to prove the
+# extractor and the stat panel. Expected values are asserted in test_extract.py.
+#
+#   hand_1  river jam, hero FOLDS          -> 1 river fold facing all-in; no showdown
+#   hand_2  river jam, hero CALLS          -> 1 river call facing all-in; showdown
+#   hand_3  ~38% pot river bet, hero FOLDS -> fold-to-river-bet, bucket (0,0.5]; not all-in
+#   hand_4  open, everyone folds preflop   -> preflop folds only; no flop
+#   hand_5  flop c-bet, hero FOLDS to it   -> is_cbet flagged; facing_cbet flagged
+
+[hand_1]
+variant = "NT"
+antes = [0, 0, 0, 0, 0, 0]
+blinds_or_straddles = [25, 50, 0, 0, 0, 0]
+min_bet = 50
+starting_stacks = [5000, 5000, 3000, 5000, 5000, 5000]
+actions = [
+  "d dh p1 ????", "d dh p2 ????", "d dh p3 AhKh", "d dh p4 ????", "d dh p5 ????", "d dh p6 ????",
+  "p3 cbr 150", "p4 f", "p5 f", "p6 f", "p1 f", "p2 cc",
+  "d db 2c7hKd",
+  "p2 cc", "p3 cbr 200", "p2 cc",
+  "d db 5s",
+  "p2 cc", "p3 cbr 600", "p2 cc",
+  "d db 9d",
+  "p2 cc", "p3 cbr 2050", "p2 f",
+]
+year = 2009
+month = 7
+day = 5
+
+[hand_2]
+variant = "NT"
+antes = [0, 0, 0, 0, 0, 0]
+blinds_or_straddles = [25, 50, 0, 0, 0, 0]
+min_bet = 50
+starting_stacks = [5000, 5000, 3000, 5000, 5000, 5000]
+actions = [
+  "d dh p1 ????", "d dh p2 9c9s", "d dh p3 AhKh", "d dh p4 ????", "d dh p5 ????", "d dh p6 ????",
+  "p3 cbr 150", "p4 f", "p5 f", "p6 f", "p1 f", "p2 cc",
+  "d db 2c7hKd",
+  "p2 cc", "p3 cbr 200", "p2 cc",
+  "d db 5s",
+  "p2 cc", "p3 cbr 600", "p2 cc",
+  "d db 9d",
+  "p2 cc", "p3 cbr 2050", "p2 cc",
+  "p2 sm 9c9s", "p3 sm AhKh",
+]
+year = 2009
+month = 7
+day = 5
+
+[hand_3]
+variant = "NT"
+antes = [0, 0, 0, 0, 0, 0]
+blinds_or_straddles = [25, 50, 0, 0, 0, 0]
+min_bet = 50
+starting_stacks = [8000, 8000, 8000, 8000, 8000, 8000]
+actions = [
+  "d dh p1 ????", "d dh p2 ????", "d dh p3 AhKh", "d dh p4 ????", "d dh p5 ????", "d dh p6 ????",
+  "p3 cbr 150", "p4 f", "p5 f", "p6 f", "p1 f", "p2 cc",
+  "d db 2c7hKd",
+  "p2 cc", "p3 cbr 200", "p2 cc",
+  "d db 5s",
+  "p2 cc", "p3 cc",
+  "d db 9d",
+  "p2 cc", "p3 cbr 300", "p2 f",
+]
+year = 2009
+month = 7
+day = 6
+
+[hand_4]
+variant = "NT"
+antes = [0, 0, 0, 0, 0, 0]
+blinds_or_straddles = [25, 50, 0, 0, 0, 0]
+min_bet = 50
+starting_stacks = [5000, 5000, 5000, 5000, 5000, 5000]
+actions = [
+  "d dh p1 ????", "d dh p2 ????", "d dh p3 AhKh", "d dh p4 ????", "d dh p5 ????", "d dh p6 ????",
+  "p3 cbr 150", "p4 f", "p5 f", "p6 f", "p1 f", "p2 f",
+]
+year = 2009
+month = 7
+day = 6
+
+[hand_5]
+variant = "NT"
+antes = [0, 0, 0, 0, 0, 0]
+blinds_or_straddles = [25, 50, 0, 0, 0, 0]
+min_bet = 50
+starting_stacks = [6000, 6000, 6000, 6000, 6000, 6000]
+actions = [
+  "d dh p1 ????", "d dh p2 ????", "d dh p3 AhKh", "d dh p4 ????", "d dh p5 ????", "d dh p6 ????",
+  "p3 cbr 150", "p4 f", "p5 f", "p6 f", "p1 f", "p2 cc",
+  "d db 2c7hKd",
+  "p2 cc", "p3 cbr 225", "p2 f",
+]
+year = 2009
+month = 7
+day = 7
