@@ -1,4 +1,4 @@
-# pokermeta
+# poker-stakes-pipeline
 
 Turns poker hand histories into two tidy tables and measures betting tendencies by stake, with a confidence interval on every rate.
 
@@ -19,8 +19,8 @@ For the real data, download and unzip the dataset (about 20 GB, link below) into
 
 ```
 .venv/bin/python src/phh_to_parquet.py --data data --out out --glob '**/*.phhs'
-.venv/bin/python src/build_db.py --out out --db out/pokermeta.db
-.venv/bin/python src/report.py --out out/pokermeta.db --site PokerStars --seats 6
+.venv/bin/python src/build_db.py --out out --db out/poker.db
+.venv/bin/python src/report.py --out out/poker.db --site PokerStars --seats 6
 ```
 
 The full set (21.6 million hands) parses in about 30 minutes on 10 cores; 755 hands are broken in the source and are listed in the QA file.

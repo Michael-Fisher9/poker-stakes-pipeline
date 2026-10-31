@@ -6,7 +6,7 @@ One figure and one table, built only from the stat panel (stats.py), so every
 number on the page comes from the same query that the tests check.
 
     python src/report.py --out out --site Synthetic --planted config/planted.csv
-    python src/report.py --out out/pokermeta.db --site PokerStars --seats 6
+    python src/report.py --out out/poker.db --site PokerStars --seats 6
 
 Writes <out>/report/<date>/stakes.png and stakes.md. With --planted (synthetic
 data only) the planted rates are drawn as open markers next to the estimates.

@@ -2,8 +2,8 @@
 """
 explore.py
 ==========
-Interactive-style data exploration of the pokermeta DuckDB store.
-Run:  python src/explore.py --out out/pokermeta.db
+Interactive-style data exploration of the DuckDB store.
+Run:  python src/explore.py --out out/poker.db
 """
 import argparse
 import duckdb
@@ -22,7 +22,7 @@ def section(title):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="out/pokermeta.db")
+    ap.add_argument("--out", default="out/poker.db")
     a = ap.parse_args()
 
     con = duckdb.connect(a.out, read_only=True)

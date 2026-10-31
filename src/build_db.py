@@ -6,12 +6,12 @@ One-time conversion: read all Parquet shards in a store directory and
 materialise them as native DuckDB tables in a single .db file.
 
 After this runs, all scripts that accept --out can be given the .db path
-directly (e.g. ``--out out/pokermeta.db``) instead of the parquet directory.
+directly (e.g. ``--out out/poker.db``) instead of the parquet directory.
 Queries go from ~30 s (scanning 23 K shard files) to milliseconds.
 
 Usage
 -----
-    python src/build_db.py --out out --db out/pokermeta.db
+    python src/build_db.py --out out --db out/poker.db
 """
 from __future__ import annotations
 

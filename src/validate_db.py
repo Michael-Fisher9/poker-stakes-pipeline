@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Quick validation checks on a freshly built pokermeta.db."""
+"""Quick validation checks on a freshly built poker.db."""
 import sys
 import duckdb
 
-db_path = sys.argv[1] if len(sys.argv) > 1 else "out/pokermeta.db"
+db_path = sys.argv[1] if len(sys.argv) > 1 else "out/poker.db"
 con = duckdb.connect(db_path, read_only=True)
 
 print("=== 1. Duplicate (hand_id, action_idx) groups ===")
