@@ -27,6 +27,11 @@ Every NL25 and NL50 hand with a bet was lost (0.0% bets and raises in the store,
 were unaffected. Amounts are now converted to float once, in `_snapshot`.
 Stores built before this date are wrong at low stakes and need re-parsing.
 
+Re-parsed the full HandHQ set the same day: 21,605,332 hands kept of 21,606,087
+(755 dropped, all "Unable to repair the hand history" from PokerKit, i.e. broken
+in the source), against 12.9 million before. NL25 and NL50 now show 15-21% bets
+and raises, in line with the higher stakes. 30 minutes on 10 cores.
+
 ### Dropped hands are recorded and fail the run
 Every hand that won't replay goes to `qa/parse_errors.csv`; the run exits 2 if
 more than `--max-error-rate` (default 0.5%) fail. Site is matched against the

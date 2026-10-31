@@ -24,7 +24,7 @@ Examples
   # everything under data/, all sites/stakes, all cores
   python src/phh_to_parquet.py --data data --out out
 
-  # just PokerStars NL50 6-max (the Phase-0 headline slice), 8 workers
+  # just PokerStars NL50 with six players dealt in, 8 workers
   python src/phh_to_parquet.py --data data --out out \
       --site PokerStars --stakes NL50 --seats 6 --workers 8
 
