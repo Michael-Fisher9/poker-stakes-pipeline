@@ -62,7 +62,7 @@ These are levels for one site and one month, not causes. Higher stakes draw diff
 ## Limits
 
 - One month of 2009: a level, not a trend. Comparing years needs matched later samples of the same site, stake and table size.
-- Position labels assume seat 1 is the small blind; check them before using position cuts.
+- Position labels assume seat 1 posts the small blind and seat 2 the big blind. That holds for 99.7% of hands in a 300-file sample; the rest have a missing or doubled blind and get mislabeled positions.
 - The showdown rate is per hand (did the hand reach showdown), not per player.
 - The synthetic players act on coin flips, not hand strength. They test the pipeline; they say nothing about how people play.
 
