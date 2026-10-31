@@ -46,7 +46,7 @@ PokerStars, July 2009, hands with six players dealt in (2.3 million hands from N
 
 Three of the four rates move steadily with stake. Players re-raise an open more often as stakes rise, from 4.1% at NL25 to 7.1% at NL1000. They fold less often to a flop continuation bet (52.9% to 48.8%) and more often when facing a river all-in (48.1% to 54.0%). The intervals at the two ends don't overlap for any of the three. The flop continuation-bet rate itself is flat, between 65.6% and 66.7% at every stake.
 
-These are levels for one site and one month, not causes. Higher stakes draw different players and different table conditions, and the river all-in cells hold one to two thousand decisions above NL400, so their intervals are about five points wide.
+These are levels for one site and one month, not causes. Above NL400 the river all-in cells hold one to two thousand decisions, so those intervals are about five points wide.
 
 ## Why it's built this way
 
@@ -62,7 +62,7 @@ These are levels for one site and one month, not causes. Higher stakes draw diff
 ## Limits
 
 - One month of 2009: a level, not a trend. Comparing years needs matched later samples of the same site, stake and table size.
-- Position labels assume seat 1 posts the small blind and seat 2 the big blind. That holds for 99.7% of hands in a 300-file sample; the rest have a missing or doubled blind and get mislabeled positions.
+- Position labels assume seat 1 posts the small blind and seat 2 the big blind. True for 99.7% of hands in a 300-file sample.
 - The showdown rate is per hand (did the hand reach showdown), not per player.
 - The synthetic players act on coin flips, not hand strength. They test the pipeline; they say nothing about how people play.
 
